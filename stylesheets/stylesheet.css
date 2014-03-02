@@ -8,6 +8,7 @@
   position: relative;
   float: right;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-info li {
@@ -21,11 +22,14 @@
   text-transform: uppercase;
   font-size: 80%;
   padding-top: 5px;
+  font-weight: 100;
 }
 
 .section-header {
   text-transform: uppercase;
   clear: both;
+  color: #CFCFCF;
+  font-weight: 100;
 }
 
 .job-position {
@@ -36,8 +40,13 @@
 .employer {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
+.skills {
+  margin: 5;
+  padding: 0;
+}
 .skills li {
   float: left;
   padding-right: 8px;
@@ -47,17 +56,23 @@
   content: "\2022  ";
 }
 
+.job-details {
+  margin: 10px 0 10px 0;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #FAFAFA;
-  font: 12pt Georgia, serif;
+  font: 11pt Helvetica, sans-serif;
   font-weight: 100;
 }
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 .page {
   width: 21cm;
   height: 29.7cm;
@@ -77,10 +92,10 @@ body {
 @media print {
   .page {
       margin: 0;
-      border: initial;
-      border-radius: initial;
+      padding-top: 1cm;
       width: initial;
       height: initial;
+      min-height: initial;
       box-shadow: initial;
       background: initial;
       page-break-after: always;
@@ -91,4 +106,21 @@ body {
   pointer-events: none;
   cursor: default;
   }
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  -webkit-transform-origin: 80 10;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
