@@ -8,10 +8,9 @@ address {
   font-style: normal;
 }
 .contact-info {
-  position: relative;
+  /* position: relative; */
   float: right;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .contact-info li {
@@ -19,7 +18,7 @@ address {
   text-transform: uppercase;
   font-size: 9pt;
   padding: 1px 0 1px 0;
-  /* display: block; */
+  text-align: right;
 }
 
 a {
