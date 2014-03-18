@@ -8,7 +8,6 @@ address {
   font-style: normal;
 }
 .contact-info {
-  /* position: relative; */
   float: right;
   margin: 0;
 }
@@ -56,9 +55,11 @@ a {
   margin: 5px 5px 30px 5px;
   padding: 0;
 }
+
 .skills li {
   float: left;
   padding-right: 8px;
+  list-style: none;
 }
 
 .skills li:before {
@@ -83,8 +84,6 @@ body {
 }
 
 .page {
-  /* width: 21cm;
-  height: 29.7cm; */
   width: 210mm;
   height: 297mm;
   padding: 1.5cm;
@@ -96,7 +95,7 @@ body {
 }
 
 @page {
-    size: A4;
+    size: 21cm 29.7cm;   /*A4*/
     margin: 0;
 }
 
@@ -111,9 +110,9 @@ body {
       background: initial;
       page-break-after: always;
   }
-  body {
-    font: 11pt Georgia, serif;
-  }
+
+  
+
   a {
   text-decoration: none;
   color: black;
