@@ -97,6 +97,7 @@ body {
 @page {
     size: 21cm 29.7cm;   /*A4*/
     margin: 0;
+    border: none;
 }
 
 @media print {
@@ -109,6 +110,7 @@ body {
       box-shadow: initial;
       background: initial;
       page-break-after: always;
+      border: none;
   }
 
   
